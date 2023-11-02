@@ -1,0 +1,117 @@
+body {
+    padding: 10px;
+    background-color: #f0f7ff;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+
+    .content {
+        padding: 0px 100px;
+        display: flex;
+        flex-direction: column;
+
+        .navbar {
+            display: flex;
+            font-size: 17.53px;
+            gap: 50px;
+
+            p {
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+
+        .scrollContainer {
+            display: flex;
+            white-space: nowrap;
+            overflow-x: scroll;
+            scrollbar-width: none;
+            scrollbar-color: transparent transparent;
+        }
+
+        .cardDetail {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding: 20px;
+
+
+
+            .detail {
+                background-color: #f0f7ff;
+                border: 10px solid rgb(255, 255, 255);
+                border-radius: 10px;
+                padding: 20px;
+                position: relative;
+                right: 250px;
+                width: 700px;
+
+                p {
+                    width: 400px;
+                }
+
+                .style.ingridients {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+
+                    .bahan {
+                        background-color: blue;
+                        display: flex;
+                        justify-content: space-between;
+                        gap: 30px;
+
+                        .buttonContainer {
+                            display: flex;
+                            gap: 10px;
+                        }
+
+                    }
+                }
+            }
+
+            .image {
+                width: 400px;
+                position: absolute;
+                right: 1px;
+                top: 20px;
+
+                img {
+                    padding: 20px;
+                    width: 300px;
+                    height: 150;
+                }
+            }
+
+            .imageDetail {
+                width: 400px;
+                position: absolute;
+                right: 400px;
+                top: 130px;
+
+                img {
+                    padding: 20px;
+                    width: 400px;
+                    height: 150;
+                }
+            }
+        }
+
+        .cards {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+        }
+
+        .cardsFavorites {
+            display: flex;
+            gap: 1px;
+        }
+    }
+
+
+}
